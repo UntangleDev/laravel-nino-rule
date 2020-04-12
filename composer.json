@@ -1,0 +1,52 @@
+{
+    "name": "untangledev/laravel-nino-rule",
+    "description": "A Laravel rule for validating UK national insurance numbers",
+    "type": "library",
+    "homepage": "https://github.com/untangledev/laravel-nino-rule",
+    "keywords": [
+        "untangledev",
+        "laravel-nino-rule"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy Grant",
+            "email": "billy.grant24@icloud.com",
+            "homepage": "https://github.com/untangledev/laravel-nino-rule",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^5.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UntangleDev\\LaravelNinoRule\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UntangleDev\\LaravelNinoRule\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UntangleDev\\LaravelNinoRule\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
